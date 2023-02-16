@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-/*
- * main -Entry point
- *
- *Description: Code returns a string using puts function
+/**
+ * main - Entry point
  *
  * return: Always 0 (success)
  */
