@@ -2,14 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
- * main -Entry point
+/**
+ * main - A program that outputs random negative and poistive numbers
  *
- * Description: These code outputs a random negative or positve value
- *
- * return: Always 0 (success)
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
 	int n;
