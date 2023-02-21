@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+* main - Entry point
+*
+* Return: 0 always.
+*/
+void print_alphabet(void);
+
+int main(void)
+{
+	print_alphabet();
+	putchar('\n');
+
+	return (0);
+}
+
+/**
  * print_alphabet - print alphabet in lower cases
  */
 void print_alphabet(void)
@@ -14,17 +29,4 @@ void print_alphabet(void)
 		putchar(ch);
 		ch++;
 	}
-}
-
-/**
-* main - Entry point
-*
-* Return: 0 always.
-*/
-int main(void)
-{
-	print_alphabet();
-	putchar('\n');
-
-	return (0);
 }
