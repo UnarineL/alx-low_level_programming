@@ -1,13 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * print_alphabet_x10 - prints alphabets 10x
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-    print_alphabet_x10();
-    return (0);
-}
+	int i;
+	char ch;
+	
+	i = 48;
 
+	while (i <= 57)
+	{
+		ch = 'a';
+		while (ch <= 'z')
+		{
+			putchar(ch);
+			ch++;
+		}
+		putchar('\n');
+		i++;
+	}
+}
