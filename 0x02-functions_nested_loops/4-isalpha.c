@@ -6,7 +6,7 @@
  *
  * Return: 0 and 1 (success)
  */
-/*@parameter 'c': tke args in main*/
+/*@parameter'c': tke args in main*/
 int _isalpha(int c)
 {
 	int isalpha;
