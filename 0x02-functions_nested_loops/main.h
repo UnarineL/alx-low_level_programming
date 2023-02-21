@@ -1,18 +1,6 @@
-#ifndef main
-#define main
+#ifndef MAIN_H
+#define MAIN_H
 
 void print_alphabet(void);
 
-void print_alphabet(void)
-{
-	char ch;
-
-	ch = 'a';
-
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		ch++;
-	}
-}
 #endif

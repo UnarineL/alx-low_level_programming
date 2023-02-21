@@ -13,4 +13,18 @@ int main(void)
 
 	return (0);
 }
+/**
+ * print_alphabet - prints alphabet when evoked
+ */
+void print_alphabet(void)
+{
+	char ch;
 
+	ch = 'a';
+
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+}
