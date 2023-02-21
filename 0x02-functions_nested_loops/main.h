@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef stdio_H
+#define stdio_H
 
 void print_alphabet(void);
 
