@@ -3,10 +3,10 @@
 
 /**
  * _isalpha - added function
+ *@c:  charater to print
  *
  * Return: 0 and 1 (success)
  */
-/*@parameter'c': tke args in main*/
 int _isalpha(int c)
 {
 	int isalpha;

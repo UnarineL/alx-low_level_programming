@@ -3,6 +3,7 @@
 
 /**
  * _islower - returns 1 if alphabet is lowercase otherwise 0
+ *@c: parameter to print
  *
  * Return: 1 if true or 0 if false
  */
