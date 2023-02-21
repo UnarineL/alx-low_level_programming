@@ -1,6 +1,7 @@
-#ifndef main_H
-#define main_H
+#ifndef MAIN
+#define MAIN
 #include <stdio.h>
+
 
 void print_alphabet(void);
 
