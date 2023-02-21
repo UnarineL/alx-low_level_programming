@@ -6,8 +6,6 @@
 *
 * Return: 0 always.
 */
-void print_alphabet(void);
-
 int main(void)
 {
 	print_alphabet();
