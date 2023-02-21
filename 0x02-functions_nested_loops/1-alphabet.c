@@ -1,18 +1,7 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-* main - Check the code
-*
-* Return: 0 Always.
-*/
-int main(void)
-{
-	print_alphabet();
-	putchar('\n');
-	return (0);
-}
-/**
- * print_alphabet - prints alphabet when evoked
+ * print_alphabet - prints alphabet
  */
 void print_alphabet(void)
 {
@@ -25,4 +14,5 @@ void print_alphabet(void)
 		putchar(ch);
 		ch++;
 	}
+	putchar('\n');
 }
