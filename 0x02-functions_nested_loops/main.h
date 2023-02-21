@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef "stdio.h"
+#define "stdio.h"
 
 void print_alphabet(void);
 
