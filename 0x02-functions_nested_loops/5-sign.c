@@ -11,15 +11,15 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		return (putchar(43), putchar('\r'), 1);
+		return (putchar('+'), 1);
 	}
 	else if (n < 0)
 	{
-		return (putchar(45), putchar('\r'), -1);
+		return (putchar('-'), -1);
 	}
 	else if (n == 0)
 	{
-		return (putchar(48), putchar('\r'), 0);
+		return (putchar('0'), 0);
 	}
 	return (0);
 }
