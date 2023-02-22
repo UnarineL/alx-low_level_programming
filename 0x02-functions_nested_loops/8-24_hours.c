@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * jack_beuer - prints time
+ * jack_bauer - prints time
  */
 void jack_bauer(void)
 {
