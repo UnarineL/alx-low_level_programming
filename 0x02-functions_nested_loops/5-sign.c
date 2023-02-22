@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
@@ -10,28 +9,20 @@
  */
 int print_sign(int n)
 {
-	int isdigit;
-	int notdigit;
-	int negdigit;	
-
-	isdigit = 1;
-	notdigit = 0;
-	negdigit = 47; 
-
-	if (isdigit(n > 0))
+	if (n > 0)
 	{
-		return (isdigit);
+		putchar(43);
+		return (1);
 	}
-	else if (isdigit(n < 0))
+	else if (n < 0)
 	{
-
-		return (negdigit);
+		putchar(45);
+		return (-1);
 	}
-	else if (isdigit == 0)
+	else if (n == 0)
 	{
-		putchar('0');
-		putchar(',');
-		return (notdigit);
+		putchar(47);
+		return (0);
 	}
 	return (0);
 }
