@@ -1,10 +1,10 @@
 #include <ctype.h>
 
 /**
- * isupper - check if the alphabet is uppercase
+ * _isupper - check if the alphabet is uppercase
  * @c: takes args to be checked by the function
  *
- * Return : 1 if true or 0 if false
+ * Return: 1 if true or 0 if false
  */
 int _isupper(int c)
 {
@@ -20,6 +20,6 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	
-	return 0;
+
+	return (0);
 }
