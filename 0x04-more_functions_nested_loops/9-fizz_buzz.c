@@ -2,6 +2,7 @@
 
 /**
  * main - Fizz buzz
+ * @i: initialization of the loop
  *
  * Return: 0 always
  */
