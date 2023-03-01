@@ -3,8 +3,9 @@
 
 /**
  * string_toupper - changes all lowercase letters to uppercase
+ * @str: string to print in uppercase
  *
- * return: ptr
+ * Return: str
  */
 char *string_toupper(char *str)
 {
