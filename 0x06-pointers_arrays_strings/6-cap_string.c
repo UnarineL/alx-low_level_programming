@@ -1,39 +1,38 @@
 #include <ctype.h>
+#include <string.h>
 
 /**
  * cap_string - capitalize all words of a string
  * @str: takes the string to capitalize
  *
- * return: char
+ * Return: string
  */
 char *cap_string(char *str)
 {
 	int i;
-	int cap;
 
-	i = 0;
-	cap = 1;
-
-	while (str[i])
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (isspace(str[i]) || str[i] == ',' || str[i] == ';' || str[i] == '.')
-		{
-			cap = 1;
-		}
-		else if (str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(')
-		{
-			cap = 1;
-		}
-		else if (str[i] == ')' || str[i] == '{' || str[i] == '}')
-		{
-			cap = 1;
-		}
-		else if (cap)
+		if (i == 0 || isspace(str[i - 1]) ||  str[i - 1] == '.' || str[i] == ';')
 		{
 			str[i] = toupper(str[i]);
-			cap = 0;
 		}
-		i++;
+		else if (str[i - 1] == ',' || str[i - 1] == '?' || str[i - 1] == '!')
+		{
+			str[i] = toupper(str[i]);
+		}
+		else if (str[i - 1] == '{' || str[i - 1] == '}' ||  str[i - 1] == '\"')
+		{
+			str[i] = toupper(str[i]);
+		}
+		else if (str[i - 1] == '(' || str[i - 1] == ')')
+		{
+			str[i] = toupper(str[i]);
+		}
+		else if (str[i - 1] == '\t')
+		{
+			continue;
+		}
 	}
-	return (0);
+	return (str);
 }
