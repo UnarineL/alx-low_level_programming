@@ -4,7 +4,7 @@
 /**
  * _strspn - gets the length of string prefix
  * @s: initial segment
- * @accept: bytes 
+ * @accept: bytes
  *
  * Return: number of bytes
  */
@@ -25,6 +25,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			return (i);
 		}
-	}	
+	}
 	return (i);
 }
