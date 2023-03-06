@@ -20,5 +20,5 @@ int main(void)
 		{'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
 	};
 	print_chessboard(board);
-	return(0);
+	return (0);
 }
