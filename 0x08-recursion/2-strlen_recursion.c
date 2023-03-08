@@ -1,3 +1,5 @@
+#include <string.h>
+
 /**
  * _strlen_recursion - return the length of string recursively
  * @s: string source
@@ -6,10 +8,15 @@
  */
 int _strlen_recursion(char *s)
 {
+	int len;
 
 	if (*s == '\0')
 	{
 		return (0);
 	}
-	return (1 + _strlen_recursion(s + 1));
+	else
+	{
+		len = strlen(s);
+	}
+	return (len);
 }
