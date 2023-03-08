@@ -47,3 +47,4 @@ int _sqrt_recursion(int n)
 	}
 	return (b_search(n, 0, n));
 }
+
