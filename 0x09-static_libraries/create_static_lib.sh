@@ -1,2 +1,5 @@
 #!/bin/bash
-ar -rc liball.a *.o
+
+gcc -c $(ls *.c | grep -v "main.c")
+
+ar -rcs liball.a *.o
