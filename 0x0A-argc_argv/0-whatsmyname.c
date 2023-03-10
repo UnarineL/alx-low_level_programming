@@ -2,6 +2,8 @@
 
 /**
  * main - checks the name of the file
+ * @argc: arguments coun in command line
+ * @argv: array of args in count
  *
  * Return: 0
  */
