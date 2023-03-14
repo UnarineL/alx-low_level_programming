@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - pointer 2 two dimensional array
+ * alloc_grid - pointer two dimensional array
  * @width: is column
  * @height: is the row
  *
@@ -41,5 +41,6 @@ int **alloc_grid(int width, int height)
 			grid[i][j] = 0;
 		}
 	}
+	free(grid[i]);
 	return (grid);
 }
