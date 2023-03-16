@@ -32,7 +32,6 @@ int main(int argc, char *argv[])
 	{
 		error();
 	}
-
 	for (i = 1; i < 3; i++)
 	{
 		for (j = 0; j < (int)strlen(argv[i]); j++)
