@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
 	int len1;
 	int len2;
 	int *result;
-	int i, j, start;
+	int i, j;
+	int start;
 
 	if (argc != 3)
 	{
