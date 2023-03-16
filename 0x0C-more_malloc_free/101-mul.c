@@ -5,7 +5,7 @@
 /**
  * error - exit function
  */
-void error(void)
+void error()
 {
 	printf("error\n");
 	exit(98);
