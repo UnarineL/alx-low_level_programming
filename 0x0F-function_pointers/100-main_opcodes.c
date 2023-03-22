@@ -9,8 +9,9 @@
  *
  * Return: 0
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
+	int i;
 	char *start;
 	char *end;
 	int num_of_opcodes;
@@ -33,8 +34,12 @@ int main(int argc, int *argv[])
 	end = (char *)(main + num_of_bytes);
 	num_of_opcodes = end - start;
 
-	for (nt i = 0; i < num_of_opcodes; i++)
+	for (i = 0; i < num_of_opcodes; i++)
 	{
+		if (i > 0 && i < num_of_opcodes - 1)
+		{
+			printf(" ");
+		}
 		printf("%02x", start[i] & 0xff);
 	}
 	printf("\n");
