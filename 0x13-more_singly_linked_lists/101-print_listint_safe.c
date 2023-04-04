@@ -12,7 +12,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t i;
 
 	i = 0;
-	node = headu;
+	node = head;
 	while (node != NULL)
 	{
 		printf("[%p] %d\n", (void *)node, node->n);
