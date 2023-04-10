@@ -16,7 +16,7 @@ void io_check(int file_d, int status, char *filename, char f_mode)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_d);
 		exit(100);
 	}
-	else if (f_mode == '0' && status == -1)
+	else if (f_mode == 'O' && status == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	}
 
 	src = open(argv[1], O_RDONLY);
-	io_check(src, -1, argv[1], '0');
+	io_check(src, -1, argv[1], 'O');
 	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
 	io_check(dest, -1, argv[2], 'W');
 
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 		num = read(src, buffer, sizeof(buffer));
 		if (num == -1)
 		{
-			io_check(-1, -1, argv[1], '0');
+			io_check(-1, -1, argv[1], 'O');
 		}
 		w = write(dest, buffer, num);
 		if (w == -1)
