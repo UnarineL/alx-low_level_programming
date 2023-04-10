@@ -14,7 +14,7 @@ void io_check(int file_d, int status, char *filename, char f_mode)
 	if (f_mode == 'c' && status == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_d);
-		exit(98);
+		exit(100);
 	}
 	else if (f_mode == '0' && status == -1)
 	{
