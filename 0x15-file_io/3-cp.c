@@ -27,12 +27,12 @@ int main(int argc, char *argv[])
 	while (n_read == 1024)
 	{
 		n_read = read(src, buffer, sizeof(buffer));
-		if (wrote == -1)
+		if (wr == -1)
 		{
 			io_stat(-1, -1, argv[1], '0');
 		}
-		wrote = write(dest, buffer, n_read);
-		if (wrote == -1)
+		wr = write(dest, buffer, n_read);
+		if (wr == -1)
 		{
 			io_stat(-1, -1, argv[2], 'W');
 		}
@@ -55,17 +55,17 @@ int main(int argc, char *argv[])
  */
 void io_stat(int stat, int fd, char *filename, char md)
 {
-	if (mode == 'C && stat == -1')
+	if (md == 'C' && stat == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	else if (mode == '0' && stat == -1)
+	else if (md == '0' && stat == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
 	}
-	else if (mode == 'W' && stat == -1)
+	else if (md == 'W' && stat == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
