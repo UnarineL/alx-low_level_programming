@@ -7,7 +7,7 @@
  *
  * Return: number of letters to read
  */
-ssize_t read_textfile(const *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t r_len, w_len;
@@ -18,7 +18,7 @@ ssize_t read_textfile(const *filename, size_t letters)
 		return (0);
 	}
 	fd = open(filename, O_RDONLY);
-	if (fd == -10)
+	if (fd == -1)
 	{
 		return (0);
 	}
@@ -32,10 +32,10 @@ ssize_t read_textfile(const *filename, size_t letters)
 	close(fd);
 	if (r_len == -1)
 	{
-		free(buffer);
+		free(buff);
 		return (0);
 	}
-	w_len = write(STDOUT_FILENO, buffer, r_len);
+	w_len = write(STDOUT_FILENO, buff, r_len);
 	free(buff);
 	if (r_len != w_len)
 	{
