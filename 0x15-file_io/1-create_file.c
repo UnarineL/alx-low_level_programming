@@ -20,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
 	{
-		return (-10);
+		return (-1);
 	}
 	if (!text_content)
 	{
@@ -37,6 +37,6 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	close (fd);
+	close(fd);
 	return (1);
 }
