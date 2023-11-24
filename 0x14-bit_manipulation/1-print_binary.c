@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * base_expo - calculates power of base
  * @b: base of the exponent
  * @p: power
